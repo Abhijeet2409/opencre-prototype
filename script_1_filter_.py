@@ -1,4 +1,3 @@
-#  we avoided pygithub intentionally
 import os
 import subprocess
 import re
