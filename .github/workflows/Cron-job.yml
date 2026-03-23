@@ -17,3 +17,15 @@ jobs:
       - run: python script_1_filter_.py
       - run: python script_2_Raw_diff_.py
       - run: python script_3_Cleaner.py
+
+      - name: Upload Raw Bucket
+        uses: actions/upload-artifact@v3
+        with:
+          name: raw_bucket
+          path: Raw_Bucket/
+
+      - name: Upload Cleaned Data
+        uses: actions/upload-artifact@v3
+        with:
+          name: cleaned_data
+          path: Cleaned_diffs/
