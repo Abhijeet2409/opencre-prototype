@@ -1,0 +1,19 @@
+name: Prototype Pipeline
+
+on:
+  workflow_dispatch
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - run: python script_1_filter_.py
+      - run: python script_2_Raw_diff_.py
+      - run: python script_3_Cleaner.py
