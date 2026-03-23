@@ -43,6 +43,7 @@ def main():
         # create cleaned folder
         os.makedirs(CLEAN_DIR, exist_ok=True)
 
+        print("Saving to:", f"{CLEAN_DIR}/{commit}.json")
         # save single JSON per commit
         with open(f"{CLEAN_DIR}/{commit}.json", "w") as f:
             json.dump(output, f, indent=2)
