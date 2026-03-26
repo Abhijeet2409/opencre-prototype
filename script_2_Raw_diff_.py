@@ -8,7 +8,7 @@ def run(cmd):
     return subprocess.run(cmd, capture_output=True, text=True).stdout
 
 def main():
-    # iterate commits
+    
     for commit in os.listdir(RAW_BUCKET):
         cpath = f"{RAW_BUCKET}/{commit}"
         if not os.path.isdir(cpath):
