@@ -21,6 +21,8 @@ if not os.path.exists(REPO_PATH):
 # 2. Get last commit
 commit = run(["git", "-C", REPO_PATH, "log", "-1", "--pretty=format:%H"])
 
+commit = commit[:8]
+
 # 3. Create commit folder
 commit_path = f"{RAW_BUCKET}/{commit}"
 os.makedirs(commit_path, exist_ok=True)
