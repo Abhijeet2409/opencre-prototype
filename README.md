@@ -67,8 +67,12 @@ Cleaned_data/
 
 ---
 
-## Example Output
+## Example JSON Output
 ![Example Output](https://github.com/user-attachments/assets/92517197-97f1-4e0f-8700-56d41d25b168)
+## Example Raw Diff Bucket 
+<img width="1906" height="826" alt="image" src="https://github.com/user-attachments/assets/2b7a8c7c-b73a-4ff5-82cb-0e8db231b04d" />
+
+
 
 ---
 
